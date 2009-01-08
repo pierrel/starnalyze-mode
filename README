@@ -1,0 +1,1 @@
+Emacs minor mode which provides the do-lc function, which runs and displays the results of do_LC on the file being edited in the current buffer
