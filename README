@@ -1,1 +1,11 @@
-Emacs minor mode which provides the do-lc function, which runs and displays the results of do_LC on the file being edited in the current buffer
+Emacs minor mode which provides the do-lc function, which runs and displays the results of do_LC on the file being edited in the current buffer and then opens the correct .ps file for viewing.
+
+INSTALL
+1. download the starnalyze-mode.el file.
+2. copy the file to '/usr/share/emacs/site-lisp'
+3. copy the following two lines into your .emacs file (located in your home directory: ~/.emacs):
+	(require 'starnalyze-mode)
+	(starnalyze-mode t)
+
+USAGE
+Open a .dat file in emacs and then invoke do-lc with Alt-s. You will be prompted to enter the name of the .par file (a default will be provided), and then the resulting postscript file will be opened in gv.
